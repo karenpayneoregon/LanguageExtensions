@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTest", "CommonTest\Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93CD12FF-C6A3-4EC6-A9F4-526DF9AB2ED0}"
 	ProjectSection(SolutionItems) = preProject
+		CreateDatabase.sql = CreateDatabase.sql
+		DataScript.sql = DataScript.sql
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject

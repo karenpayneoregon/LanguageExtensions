@@ -46,6 +46,9 @@
     <Compile Include="BindingSourceDataTable.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="NumericTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
