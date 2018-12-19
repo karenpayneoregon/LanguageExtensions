@@ -9,7 +9,7 @@ For client code written in C#, F# and Visual Basic, there is no apparent differe
 
 ### Important
 
-- Ensure SQL-Server is installed and running
+- Ensure [SQL-Server](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) is installed and running
 - Change the data connection in the project [BaseLibrary.BaseSqlServerConnections](https://github.com/karenpayneoregon/LanguageExtensions/blob/master/BaseLibrary/BaseSqlServerConnections.cs).
 - Before running example projects you must first run the data scripts under the Solution items folder.
-- Install SandCastle or unload the document project
+- Install [SandCastle](https://github.com/EWSoftware/SHFB) or unload the document project
