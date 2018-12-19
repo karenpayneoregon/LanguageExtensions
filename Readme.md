@@ -10,6 +10,6 @@ For client code written in C#, F# and Visual Basic, there is no apparent differe
 ### Important
 
 - Ensure SQL-Server is installed and running
-- Change the data connection in the project BaseLibrary.BaseSqlServerConnections.
+- Change the data connection in the project [BaseLibrary.BaseSqlServerConnections](https://github.com/karenpayneoregon/LanguageExtensions/blob/master/BaseLibrary/BaseSqlServerConnections.cs).
 - Before running example projects you must first run the data scripts under the Solution items folder.
 - Install SandCastle or unload the document project
