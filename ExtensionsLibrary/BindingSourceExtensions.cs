@@ -32,6 +32,41 @@ namespace ExtensionsLibrary
     public static class BindingSourceExtensions
     {
         /// <summary>
+        /// This is a BAD example of an extension method as any object
+        /// can use it.
+        /// </summary>
+        /// <param name="pSender">Any object but only works with BindingSource component</param>
+        /// <param name="pRelationshipName">DataSet relationship</param>
+        /// <returns>Current DataRow</returns>
+        /// <remarks>
+        /// As a general rule of thumb use the exact type, not an object or
+        /// use a generic extension method with constraint(s).
+        /// </remarks>
+        public static DataRow ParentRow(this object pSender, string pRelationshipName)
+        {
+            if (!(pSender is BindingSource))
+            {
+                throw new Exception("Must be a BindingSource");
+            }
+            else
+            {
+                var bs = (BindingSource) pSender;
+                return ((DataRowView) bs.Current)?.Row.GetParentRow(pRelationshipName);
+            }
+        }
+        /// <summary>
+        /// Get current child row's parent row when DataSource is a DataTable/
+        /// </summary>
+        /// <param name="pSender"></param>
+        /// <param name="pRelationshipName">DataSet relationship</param>
+        /// <returns>Current DataRow</returns>
+        public static DataRow ParentRow(this BindingSource pSender, string pRelationshipName) 
+        {
+            var bs = (BindingSource)pSender;
+            return ((DataRowView)bs.Current)?.Row.GetParentRow(pRelationshipName);
+        }
+
+        /// <summary>
         /// Provides access to the underlying DataTable or an exception is thrown if the DataSource is not a BindingSource
         /// </summary>
         /// <param name="sender">BindingSource with a DataTable set for the DataSource</param>
