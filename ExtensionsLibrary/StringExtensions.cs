@@ -36,7 +36,7 @@ namespace ExtensionsLibrary
             }
             else
             {
-                return (bool) sender?.Contains(pSubString);
+                return (bool)sender?.Contains(pSubString);
             }
         }
 
@@ -59,7 +59,7 @@ namespace ExtensionsLibrary
         /// <remarks>
         /// An exception is thrown if conversion fails with pThrowExceptionIfFailed = true.
         /// </remarks> 
-        public static int ToInt32(this string sender, bool pThrowExceptionOnFailure = false) 
+        public static int ToInt32(this string sender, bool pThrowExceptionOnFailure = false)
         {
             var valid = int.TryParse(sender, out var result);
 
@@ -113,7 +113,27 @@ namespace ExtensionsLibrary
 
             return regularExpression.Match(sender).Success;
         }
-
+        /// <summary>
+        /// Alternate to determine if a string is numeric
+        /// </summary>
+        /// <param name="sender">String to test if numeric</param>
+        /// <returns>True if numeric or false if not numeric</returns>
+        /// <remarks>
+        /// Does not handle currency symbol
+        /// </remarks>
+        public static bool IsNumeric1(this string sender) => sender.All(char.IsNumber);
+        /// <summary>
+        /// Alternate to determine if a string is numeric
+        /// </summary>
+        /// <param name="sender">String to test if numeric</param>
+        /// <returns>True if numeric or false if not numeric</returns>
+        /// <remarks>
+        /// This one a far fetch 
+        /// </remarks>
+        public static bool IsNumeric2(this string sender)
+        {
+            return double.TryParse(sender, out double result);
+        }
         /// <summary>
         /// Format a string for reading e.g. 976-1234, (333) 444-5555, (933) 344-4555 x5
         /// </summary>

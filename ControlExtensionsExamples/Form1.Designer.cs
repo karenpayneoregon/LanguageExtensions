@@ -73,9 +73,9 @@
             // 
             this.panelDockBottom1.Controls.Add(this.exitButton);
             this.panelDockBottom1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelDockBottom1.Location = new System.Drawing.Point(0, 191);
+            this.panelDockBottom1.Location = new System.Drawing.Point(0, 270);
             this.panelDockBottom1.Name = "panelDockBottom1";
-            this.panelDockBottom1.Size = new System.Drawing.Size(622, 48);
+            this.panelDockBottom1.Size = new System.Drawing.Size(647, 48);
             this.panelDockBottom1.TabIndex = 2;
             // 
             // exitButton
@@ -84,7 +84,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.exitButton.Location = new System.Drawing.Point(535, 13);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(100, 23);
             this.exitButton.TabIndex = 0;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             this.descendantsGroupBox.Controls.Add(this.descendantButton1);
             this.descendantsGroupBox.Location = new System.Drawing.Point(170, 28);
             this.descendantsGroupBox.Name = "descendantsGroupBox";
-            this.descendantsGroupBox.Size = new System.Drawing.Size(440, 146);
+            this.descendantsGroupBox.Size = new System.Drawing.Size(472, 212);
             this.descendantsGroupBox.TabIndex = 5;
             this.descendantsGroupBox.TabStop = false;
             this.descendantsGroupBox.Text = "Descendants";
@@ -184,9 +184,9 @@
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.descendantButton2);
-            this.panel1.Location = new System.Drawing.Point(96, 33);
+            this.panel1.Location = new System.Drawing.Point(15, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(338, 105);
+            this.panel1.Size = new System.Drawing.Size(441, 105);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -194,43 +194,43 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.descendantButton3);
-            this.panel2.Location = new System.Drawing.Point(92, 19);
+            this.panel2.Location = new System.Drawing.Point(175, 19);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 80);
+            this.panel2.Size = new System.Drawing.Size(263, 80);
             this.panel2.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 14);
+            this.textBox1.Location = new System.Drawing.Point(75, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(139, 20);
             this.textBox1.TabIndex = 1;
             // 
             // descendantButton3
             // 
-            this.descendantButton3.Location = new System.Drawing.Point(12, 11);
+            this.descendantButton3.Location = new System.Drawing.Point(75, 11);
             this.descendantButton3.Name = "descendantButton3";
-            this.descendantButton3.Size = new System.Drawing.Size(75, 23);
+            this.descendantButton3.Size = new System.Drawing.Size(109, 23);
             this.descendantButton3.TabIndex = 0;
-            this.descendantButton3.Text = "button1";
+            this.descendantButton3.Text = "button1 panel2";
             this.descendantButton3.UseVisualStyleBackColor = true;
             // 
             // descendantButton2
             // 
             this.descendantButton2.Location = new System.Drawing.Point(11, 19);
             this.descendantButton2.Name = "descendantButton2";
-            this.descendantButton2.Size = new System.Drawing.Size(75, 23);
+            this.descendantButton2.Size = new System.Drawing.Size(142, 23);
             this.descendantButton2.TabIndex = 0;
-            this.descendantButton2.Text = "button1";
+            this.descendantButton2.Text = "button1 panel1";
             this.descendantButton2.UseVisualStyleBackColor = true;
             // 
             // descendantButton1
             // 
             this.descendantButton1.Location = new System.Drawing.Point(15, 33);
             this.descendantButton1.Name = "descendantButton1";
-            this.descendantButton1.Size = new System.Drawing.Size(75, 23);
+            this.descendantButton1.Size = new System.Drawing.Size(138, 23);
             this.descendantButton1.TabIndex = 0;
-            this.descendantButton1.Text = "Get buttons";
+            this.descendantButton1.Text = "Get buttons (GroupBox)";
             this.descendantButton1.UseVisualStyleBackColor = true;
             this.descendantButton1.Click += new System.EventHandler(this.descendantButton1_Click);
             // 
@@ -238,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 239);
+            this.ClientSize = new System.Drawing.Size(647, 318);
             this.Controls.Add(this.descendantsGroupBox);
             this.Controls.Add(this.selectedRadioGroupBox);
             this.Controls.Add(this.label1);
